@@ -129,7 +129,7 @@ function showNextStep(option) {
     // Handle special case for "sleeping"
     else if (option === "sleeping") {
         const mess = document.createElement("p");
-        mess.innerText = "Haan haan, go ahead and sleep, but first, complete the following:";
+        mess.innerText = "Haan haan, go ahead and sleep -.- (crying inside coz ekbar bar bhi shakal nhi dekha), but first, complete the following:";
         questionsDiv.appendChild(mess);
 
         const img = document.createElement("img");
