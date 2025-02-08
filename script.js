@@ -253,8 +253,6 @@ function showValentinePage() {
 }
 
 function sayYes() {
-    document.getElementById("message").innerText = "Aap aaj toh ekdum jadoo sa kr rhe ho! yayaya aami tomake bhalobashi too <3 <3 <3 !!!\n";
-        
     // Pause all audio and video elements on the page
     const videos = document.querySelectorAll('video');
     const audios = document.querySelectorAll('audio');
@@ -280,7 +278,22 @@ function sayYes() {
 
     // Append the image after the message
     document.getElementById("message").appendChild(imageElement);
+
+    // Existing message
+    document.getElementById("message").innerText = "Aap aaj toh ekdum jadoo sa kr rhe ho! yayaya aami tomake bhalobashi too <3 <3 <3 !!!\n";
+    
+    // New message on the next line
+    const additionalMessage = document.createElement('p');
+    additionalMessage.innerText = "Meri zindagi tumhare bina adhoori hai! Tum ho toh sab kuch perfect hai ❤️";
+    additionalMessage.style.fontSize = "22px";
+    additionalMessage.style.fontWeight = "bold";
+    additionalMessage.style.color = "#f06292";  // Customize the color if needed
+    additionalMessage.style.marginTop = "20px";
+
+    // Append the new message below the existing one
+    document.getElementById("message").appendChild(additionalMessage);
 }
+
 
 function moveButton() {
     const noButton = document.querySelector(".no");
