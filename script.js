@@ -273,7 +273,7 @@ function sayYes() {
 
     // Create an image element
     const imageElement = document.createElement('img');
-    imageElement.src = '/media/meriEntry.jpeg';  
+    imageElement.src = 'media/meriEntry.jpeg';  
     imageElement.alt = "Special Moment";
     imageElement.style.width = '500px';  // Adjust the size as needed
     imageElement.style.marginTop = '50px';  // Add some margin if needed
