@@ -59,22 +59,23 @@ function showNextStep(option) {
 
     // Define media content based on the selected option
     const mediaMap = {
-        memories: "/media/oldPicture.png",
-        talks: "/media/talk.png",
-        future: "/media/future.png",
-        everything: "/media/badhaaiHo.mp4",
-        cuteText: "/media/mindPPT.png",
-        meme: "/media/meme.mp4",
-        warmHug: "/media/warmHug.png",
-        goodSong: "/media/balh.m4a",
-        cuddles: "/media/cuddle.mp4",
-        coldCoffee: "/media/mapsColdCoffee.png",
-        nineTea: "/media/feelGood.jpg",
-        specialDate: "/media/specialDate.png",
-        funTrip: "/media/trips.png",
-        secret: "/media/tumhara.png",
-        sleeping: "/media/sleepingImage.jpeg"
+        memories: "media/oldPicture.png",  // Remove the leading slash
+        talks: "media/talk.png",
+        future: "media/future.png",
+        everything: "media/badhaaiHo.mp4",
+        cuteText: "media/mindPPT.png",
+        meme: "media/meme.mp4",
+        warmHug: "media/warmHug.png",
+        goodSong: "media/balh.m4a",
+        cuddles: "media/cuddle.mp4",
+        coldCoffee: "media/mapsColdCoffee.png",
+        nineTea: "media/feelGood.jpg",
+        specialDate: "media/specialDate.png",
+        funTrip: "media/trips.png",
+        secret: "media/tumhara.png",
+        sleeping: "media/sleepingImage.jpeg"
     };
+
 
     if (mediaMap[option]) {
         mediaContent = mediaMap[option];
