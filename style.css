@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:lavender;
+    text-align: center;
+    padding: 50px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    max-height: 800;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #ff80ab;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4f6c;
+}
+
+#questions img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#nextStep {
+    margin-top: 20px;
+}
+
+#nextStep button {
+    background-color: #ff80ab;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#nextStep button:hover {
+    background-color: #ff4f6c;
+}
+
+.mood-button.selected {
+    background-color: #4b0082; /* A darker shade of your choice */
+    color: white; /* Change text color to white when selected */
+    border: 2px solid #ffffff; /* Optional, to make it pop more */
+}
+
+#message {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+a {
+    color: #007bfff6; 
+    text-decoration: none; /*removing line*/
+}
+
+a:visited {
+    color: #007bfff6; /* same color as normal */
+}
+
+
+
