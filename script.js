@@ -246,7 +246,7 @@ function showValentinePage() {
     document.body.appendChild(valentineDiv);
     
     // Add the audio element for background music
-    const audio = new Audio("/media/haanKiHaan.m4a"); 
+    const audio = new Audio("/haanKiHaan.m4a"); 
     audio.autoplay = true;
     audio.loop = true;  // If you want the music to loop
     document.body.appendChild(audio);  // Append the audio to the body
@@ -266,14 +266,14 @@ function sayYes() {
     audios.forEach(audio => audio.pause());
     
     // Add the audio element for background music
-    const audio = new Audio("/media/youArePerfect.m4a");  // Replace with your actual audio file path
+    const audio = new Audio("/youArePerfect.m4a");  // Replace with your actual audio file path
     audio.autoplay = true;
     audio.loop = true;  // If you want the music to loop
     document.body.appendChild(audio);  // Append the audio to the body
 
     // Create an image element
     const imageElement = document.createElement('img');
-    imageElement.src = '/media/meriEntry.jpeg';  
+    imageElement.src = '/meriEntry.jpeg';  
     imageElement.alt = "Special Moment";
     imageElement.style.width = '500px';  // Adjust the size as needed
     imageElement.style.marginTop = '50px';  // Add some margin if needed
