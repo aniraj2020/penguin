@@ -1,25 +1,24 @@
-/* Global Styles */
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
     background-color: lavender;
     text-align: center;
-    padding: 10px; /* Reduced padding for mobile optimization */
-    margin: 0;
+    padding: 50px;
 }
 
-/* Card Styles */
+/* Card container styling */
 .card {
     background-color: white;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 1000px;
-    width: 100%;  /* Ensures card is responsive */
+    max-height: 800px;
     margin: 0 auto;
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    overflow: hidden; /* Prevents media content from overflowing */
 }
 
-/* Button Styles */
+/* Button styling */
 button {
     background-color: #ff80ab;
     color: white;
@@ -36,15 +35,19 @@ button:hover {
     background-color: #ff4f6c;
 }
 
-/* Image Styles */
-#questions img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
+/* Styling for images, videos, and audio within the card */
+#questions img,
+#questions video,
+#questions audio {
+    max-width: 100%;  /* Ensures media doesn't exceed the card width */
+    height: auto;     /* Keeps the aspect ratio intact */
+    border-radius: 10px; /* Round the corners */
+    margin-top: 20px;  /* Adds space above the media */
+    display: block;    /* Removes extra space below the media */
+    object-fit: contain; /* Ensures media content doesn't stretch */
 }
 
-/* Next Step Button Styles */
+/* Next step button styling */
 #nextStep {
     margin-top: 20px;
 }
@@ -63,75 +66,25 @@ button:hover {
     background-color: #ff4f6c;
 }
 
-/* Selected Mood Button Style */
+/* Selected mood button styling */
 .mood-button.selected {
-    background-color: #4b0082; 
-    color: white;
-    border: 2px solid #ffffff; 
+    background-color: #4b0082; /* A darker shade of your choice */
+    color: white; /* Changes text color to white when selected */
+    border: 2px solid #ffffff; /* Optional border for highlighting */
 }
 
-/* Message Styles */
+/* Message styling */
 #message {
     font-size: 20px;
     margin-top: 20px;
 }
 
-/* Link Styles */
+/* Styling for anchor tags (links) */
 a {
     color: #007bfff6; 
-    text-decoration: none; 
+    text-decoration: none; /* Removes underline */
 }
 
 a:visited {
-    color: #007bfff6; 
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    body {
-        padding: 20px; /* More padding for mobile */
-    }
-
-    .card {
-        padding: 20px; /* Reduce padding for mobile */
-        max-width: 100%;
-    }
-
-    button {
-        font-size: 16px; /* Adjust font size for mobile */
-        padding: 12px; /* Smaller buttons on mobile */
-    }
-
-    #nextStep button {
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    #message {
-        font-size: 18px; /* Adjust message size */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    body {
-        padding: 15px; /* Even more padding for smaller mobile screens */
-    }
-
-    .card {
-        padding: 15px; /* Smaller padding */
-    }
-
-    button {
-        font-size: 14px; /* Make buttons smaller */
-        padding: 10px;
-    }
-
-    #nextStep button {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    #message {
-        font-size: 16px;
-    }
+    color: #007bfff6; /* Keeps the same color after being visited */
 }
