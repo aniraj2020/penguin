@@ -1,24 +1,20 @@
-/* General body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: lavender;
+    background-color:lavender;
     text-align: center;
     padding: 50px;
 }
 
-/* Card container styling */
 .card {
     background-color: white;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 1000px;
-    max-height: 800px;
+    max-height: 800;
     margin: 0 auto;
-    overflow: hidden; /* Prevents media content from overflowing */
 }
 
-/* Button styling */
 button {
     background-color: #ff80ab;
     color: white;
@@ -35,19 +31,13 @@ button:hover {
     background-color: #ff4f6c;
 }
 
-/* Styling for images, videos, and audio within the card */
-#questions img,
-#questions video,
-#questions audio {
-    max-width: 100%;  /* Ensures media doesn't exceed the card width */
-    height: auto;     /* Keeps the aspect ratio intact */
-    border-radius: 10px; /* Round the corners */
-    margin-top: 20px;  /* Adds space above the media */
-    display: block;    /* Removes extra space below the media */
-    object-fit: contain; /* Ensures media content doesn't stretch */
+#questions img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
-/* Next step button styling */
 #nextStep {
     margin-top: 20px;
 }
@@ -66,25 +56,24 @@ button:hover {
     background-color: #ff4f6c;
 }
 
-/* Selected mood button styling */
 .mood-button.selected {
     background-color: #4b0082; /* A darker shade of your choice */
-    color: white; /* Changes text color to white when selected */
-    border: 2px solid #ffffff; /* Optional border for highlighting */
+    color: white; /* Change text color to white when selected */
+    border: 2px solid #ffffff; /* Optional, to make it pop more */
 }
 
-/* Message styling */
 #message {
     font-size: 20px;
     margin-top: 20px;
 }
 
-/* Styling for anchor tags (links) */
 a {
     color: #007bfff6; 
-    text-decoration: none; /* Removes underline */
+    text-decoration: none; /*removing line*/
 }
 
 a:visited {
-    color: #007bfff6; /* Keeps the same color after being visited */
+    color: #007bfff6; /* same color as normal */
 }
+
+
