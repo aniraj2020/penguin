@@ -266,7 +266,7 @@ function sayYes() {
     audios.forEach(audio => audio.pause());
     
     // Add the audio element for background music
-    const audio = new Audio("media/youArePerfect.m4a");  // Replace with your actual audio file path
+    const audio = new Audio("media/youArePerfect.mp3");  // Replace with your actual audio file path
     audio.autoplay = true;
     audio.loop = true;  // If you want the music to loop
     document.body.appendChild(audio);  // Append the audio to the body
